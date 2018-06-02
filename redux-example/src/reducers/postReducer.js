@@ -12,6 +12,11 @@ export default function (state = initialState, action) {
 				...state,
 				items: action.data
 			}
+		case NEW_POST:
+			return {
+				...state,
+				item: action.data
+			}
 		default:
 			return state;
 	}
